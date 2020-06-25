@@ -2,11 +2,26 @@
 
 > Utility to create subsheets in excel file.
 
-## Contribute / Usage
+## Usage
+
+### Install
+`
+    pip install subsheets
+`
+
+and then
+`
+    subsheets <new_file_name>
+`
+
+the program will ask for the source directory where the files are present. The
+new file will be created in the same directory.
+
+## Contribute
 
 ### Clone the source
 `
-    git clone https://github.com/CruiseDevice/twweet-cli
+    https://github.com/CruiseDevice/subsheets
 `
 
 ### Navigate inside the subsheets folder

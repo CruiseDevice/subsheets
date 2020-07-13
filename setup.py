@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="subsheets", # Replace with your own username
-    version="0.7",
+    version="0.8",
     author="Akash Chavan",
     author_email="achavan1211@gmail.com",
     description="utility to create subsheets in excel file",
@@ -20,7 +20,14 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     keywords='subsheets sheets',
     python_requires='>=3.6',
-    install_requires=['pandas', 'xlrd', 'XlsxWriter'],
+    install_requires=[
+        'pandas',
+        'xlrd',
+        'XlsxWriter',
+        'Click',
+        'colorama',
+        'inquirer'
+    ],
     entry_points={
         'console_scripts': [
             'subsheets=src.subsheets:main'
